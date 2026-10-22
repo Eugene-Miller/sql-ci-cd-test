@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sqlproj: Build DatabaseProjectAdventureWorks2025",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"c:/VsCodeProjects/sql-ci-cd/DatabaseProjectAdventureWorks2025/DatabaseProjectAdventureWorks2025.sqlproj"
+			],
+			"problemMatcher": "$sqlproj-problem-matcher",
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Builds the DatabaseProjectAdventureWorks2025 SQL project"
+		}
+	]
+}
